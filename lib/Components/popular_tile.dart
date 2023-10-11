@@ -12,6 +12,7 @@ class PopularCourseTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      width: MediaQuery.of(context).size.width*.8,
       decoration: BoxDecoration(
         color: Colors.grey[100],
         borderRadius: BorderRadius.circular(20),
@@ -22,6 +23,7 @@ class PopularCourseTile extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween, 
         children: [
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Image.asset(
               course.imagePath,
@@ -48,10 +50,13 @@ class PopularCourseTile extends StatelessWidget {
             ),
           ],
         ),
-        const Icon(
-          Icons.favorite_border_outlined,
-          color: Colors.red,
-          )
+        const Align(
+          alignment: Alignment.topRight,
+          child: Icon(
+            Icons.favorite_border_outlined,
+            color: Colors.red,
+            ),
+        )
       ]),
     );
   }
