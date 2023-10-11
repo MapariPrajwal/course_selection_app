@@ -27,7 +27,7 @@ class MatButton extends StatelessWidget {
                 fontWeight: FontWeight.bold
                 ),
               ),
-              const SizedBox(width: 10,),
+              const SizedBox(width: 20,),
               const Icon(Icons.arrow_forward,color: Colors.white,)
           ],
         ),

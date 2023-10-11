@@ -21,17 +21,19 @@ class IntroPage extends StatelessWidget {
                 Text(
                   "Select Course of Your Choice",
                   textScaleFactor: 0.8,
-                  style: GoogleFonts.anaheim(
-                      fontSize: 24, color: Colors.white),
+                  style: GoogleFonts.anaheim(fontSize: 24, color: Colors.white),
                 ),
                 const SizedBox(
                   height: 25,
                 ),
 
                 //Icon
-                Image.asset(
-                  'images/music-app.png',
-                  height: 72,
+                Padding(
+                  padding: const EdgeInsets.all(50.0),
+                  child: Image.asset(
+                    'images/music-app.png',
+                    height: 72,
+                  ),
                 ),
 
                 const SizedBox(
@@ -42,18 +44,17 @@ class IntroPage extends StatelessWidget {
                 Text(
                   "Let's choose your learnings!!!",
                   textScaleFactor: 0.8,
-                  style: GoogleFonts.sacramento(
-                      fontSize: 48, color: Colors.white),
+                  style:
+                      GoogleFonts.sacramento(fontSize: 48, color: Colors.white),
                 ),
                 const SizedBox(
                   height: 25,
-                  ),
+                ),
                 //Subtitle
                 Text(
                   "Passionate about unraveling the secrets hidden in data, I embark on a journey to turn insights into innovation and drive impactful change. Let's connect and explore the limitless possibilities at the intersection of AI, data science, and technology!",
                   style: GoogleFonts.gabriela(
-                    fontSize: 18, color: Colors.grey[400],height: 2
-                  ),
+                      fontSize: 18, color: Colors.grey[400], height: 2),
                 ),
 
                 //Get Started
@@ -61,7 +62,8 @@ class IntroPage extends StatelessWidget {
                   onTap: () {
                     Navigator.pushNamed(context, '/menupage');
                   },
-                  text: "Get Started")
+                  text: "Get Started",
+                )
               ],
             ),
           ),
